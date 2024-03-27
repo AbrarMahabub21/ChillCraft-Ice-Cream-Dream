@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from "./header.module.css"
-import logo from "../../assets/images/logo.svg"
-import reactLogo from "../../assets/images/react.svg "
+import logo from "../../assets/Images/logo.svg"
+import reactLogo from "../../assets/Images/react.svg"
 function header() {
   return (
     <header>
