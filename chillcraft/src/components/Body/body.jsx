@@ -1,9 +1,10 @@
 import React from 'react'
 import classes from "./body.module.css"
-function body() {
+import IceCreamBuilder from '../../containers/IceCreamBuilder/IceCreamBuilder'
+const body =() => {
   return (
       <div className={classes.mainBody}>
-          body
+          <IceCreamBuilder />
       </div>
       
   )

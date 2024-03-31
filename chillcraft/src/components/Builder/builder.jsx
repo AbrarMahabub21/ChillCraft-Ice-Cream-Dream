@@ -2,6 +2,7 @@ import React from 'react'
 import classes from "./builder.module.css";
 import Items from "./Items/Items";
 import TotalPrice from './TotalPrice/TotalPrice';
+import Modal from "./Modal/Modal";
 function builder() {
   return (
     <div class="react" >
@@ -16,7 +17,10 @@ function builder() {
       <button type="button" onclick="next()" class={["rounded", classes.order].join()}>
         Add to Cart
       </button>
-    </div>
+      </div>
+      <modal>
+        Hello Modal
+      </modal>
   </div>
   )
 }
