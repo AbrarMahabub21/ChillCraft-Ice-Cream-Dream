@@ -1,0 +1,16 @@
+import React from 'react'
+import classes from "./Item.module.css";
+function Item() {
+  return (
+<li className={classes.item}>
+                    <span>Vanilla</span>
+                    <span className={classes.quantity}>2</span>
+                    <div className="right">
+                      <button type="button" className={["rounded",classes.plus].join()}>+</button>
+                      <button type="button" class={[classes.minus, "rounded"].join()}>-</button>
+                    </div>
+                  </li>
+  )
+}
+
+export default Item
