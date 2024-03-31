@@ -5,8 +5,8 @@ import TotalPrice from './TotalPrice/TotalPrice';
 import Modal from "./Modal/Modal";
 function builder() {
   return (
-    <div class="react" >
-    <div class={classes.builder}>
+    <div className="react" >
+    <div className={classes.builder}>
       <h3>Craft your bespoke ice cream sundae</h3>
 
       {/* Items */}
@@ -14,7 +14,7 @@ function builder() {
       {/* Total Price*/}
       <TotalPrice />
 
-      <button type="button" onclick="next()" class={["rounded", classes.order].join()}>
+      <button type="button"  className={[classes.order,"rounded"].join(" ")}>
         Add to Cart
       </button>
       </div>
