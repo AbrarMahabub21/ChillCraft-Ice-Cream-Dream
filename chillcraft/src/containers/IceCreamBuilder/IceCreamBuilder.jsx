@@ -11,12 +11,15 @@ export default class IceCreamBuilder extends Component {
       lemon: 35,
       strawberry: 40,
       orange: 30,
-      }
+    },
+    scoops: [],
+    totalPrice: 0,
     };
   render() {
+    const { items } = this.state;
     return (
         <div class={["container", classes.container].join(" ")}> 
-            <IceCream />
+        <IceCream items={items} />
             <Builder />
         </div>  
     )
