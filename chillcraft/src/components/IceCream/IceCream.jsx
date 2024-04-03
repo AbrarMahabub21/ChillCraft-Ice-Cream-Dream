@@ -1,19 +1,23 @@
 import React from 'react';
 import classes from "./IceCream.module.css";
 import Scoop from "../Scoop/Scoop";
+
 const IceCream = ({ items }) => {
-  const flavors = object.keys(items);
+  const flavors = Object.keys(items);
+  
   return (
-    <div class={classes.icecream}>
-      <p class={classes.cone}></p>
+    <div>
+    <div className={classes.icecream}>
+      <p className={classes.cone}></p>
       {flavors.map((flavor)=>{
-        <Scoop scoop={ flavor } />
+        <Scoop keys={flavor} scoop={flavor} />
       })}
   
-    <div class={classes.cherry}></div>
-  </div>
+    <div className={classes.cherry}></div>
+      </div>
+    </div>
   )
 }
 
-export default IceCream
+export default IceCream;
 

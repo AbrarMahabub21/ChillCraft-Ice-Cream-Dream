@@ -3,10 +3,10 @@ import classes from "./Scoop.module.css";
 const Scoop = ({scoop}) => {
   return (
     <div>
-      <div class={[classes.scoop,classes[scoop]].join(' ')}></div>
+      <div className={[classes.scoop,classes[scoop]].join(' ')}></div>
     </div>
   )
 }
 
-export default Scoop
+export default Scoop;
 

@@ -18,9 +18,6 @@ function builder() {
         Add to Cart
       </button>
       </div>
-      <modal>
-        Hello Modal
-      </modal>
   </div>
   )
 }
