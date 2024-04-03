@@ -7,7 +7,7 @@ const IceCream = ({ items }) => {
     <div class={classes.icecream}>
       <p class={classes.cone}></p>
       {flavors.map((flavor)=>{
-            <Scoop />
+        <Scoop scoop={ flavor } />
       })}
   
     <div class={classes.cherry}></div>
