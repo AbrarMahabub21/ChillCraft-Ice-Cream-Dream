@@ -6,11 +6,11 @@ import Builder from "../../components/Builder/builder"
 export default class IceCreamBuilder extends Component {
   state = {
     items: {
-      Vanilla: 50,
-      Chocolate: 30,
+      Vanilla: 45,
+      Chocolate: 40,
       Strawberry: 40,
       Orange: 30,
-      Lemon : 45,  
+      Lemon : 35,  
     },
     scoops: [],
     totalPrice: 0,
