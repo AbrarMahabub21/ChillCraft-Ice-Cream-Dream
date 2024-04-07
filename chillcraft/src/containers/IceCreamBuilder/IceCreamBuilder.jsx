@@ -5,20 +5,20 @@ import Builder from "../../components/Builder/builder"
 
 export default class IceCreamBuilder extends Component {
   state = {
-    items: {
-      vanilla: 45,
-      chocolate: 50,
-      lemon: 35,
-      orange: 30,
-      strawberry: 40,
-    },
+    items: {},
     scoops: [],
     totalPrice: 0,
   };
   
-  componentDidMount() {
-     
-   }
+     componentDidMount() {
+    fetch("https://chillcraft-e2423-default-rtdb.firebaseio.com/items.json")
+      .then((response) => response.json())
+      .then((responseData) => {
+        this.setState({
+          items: responseData,
+        });
+      });
+   } 
 
     addScoop = (scoop) => {
       const { scoops, items } = this.state;
@@ -50,7 +50,7 @@ export default class IceCreamBuilder extends Component {
       return (
         <div className={["container", classes.container].join(" ")}>
           <IceCream scoops={scoops} />
-          <Builder items={items} price={totalPrice} add={this.addScoop} remove={this.removeScoop} />
+          <Builder items={items} price={totalPrice} add={this.addScoop} remove={this.removeScoop} scoops={scoops} />
         </div>
       );
     }
