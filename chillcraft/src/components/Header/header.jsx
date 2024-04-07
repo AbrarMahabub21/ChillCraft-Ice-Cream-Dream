@@ -8,7 +8,10 @@ function header() {
     <div className="container" >
       <div>
         <img className={classes.logo} src={logo} alt="Logo" />
-      </div>
+        </div>
+        <div className={classes.Center}>
+            <h1>ChillCraft</h1>
+          </div>
       <div className="textRight">
           <img src={reactLogo} alt="React" className={classes.reactLogo} />
           <strong>React</strong>

@@ -6,3 +6,10 @@
     height: 60px;
     vertical-align: middle;
   }
+
+  .Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red ;
+  }
