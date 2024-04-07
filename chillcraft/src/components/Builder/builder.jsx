@@ -3,16 +3,16 @@ import classes from "./builder.module.css";
 import Items from "./Items/Items";
 import TotalPrice from './TotalPrice/TotalPrice';
 import Modal from "./Modal/Modal";
-function builder() {
+function builder({items, price, add, remove}) {
   return (
     <div className="react" >
     <div className={classes.builder}>
       <h3>Craft your bespoke ice cream sundae</h3>
 
       {/* Items */}
-      <Items />
+        <Items items={items} add={add} remove={remove} />
       {/* Total Price*/}
-      <TotalPrice />
+      <TotalPrice price={price} />
 
       <button type="button"  className={[classes.order,"rounded"].join(" ")}>
         Add to Cart
